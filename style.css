@@ -6,6 +6,7 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -14,6 +15,14 @@ body {
 
 }
 
+a {
+    text-decoration: none;
+    transition: 1s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
 /*Cabeçalho*/
 
 header {
@@ -24,15 +33,176 @@ header {
 }
 
 header .logo {
-    height: 50vh;
-    padding-bottom: 1.5rem;
+    padding-top: 2rem;
+}
+
+
+header .logo img {
+    height: 23vh;
 }
 
 header nav {
-    margin-bottom: 1.5rem;
-
+    padding-bottom: 2.5rem;
 }
 
 header a {
     margin: 0 1rem;
+    color: black;
+}
+
+/*Sobre*/
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.banner img {
+    width: 90vw;
+}
+
+.texto-sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-sobre h2 {
+    margin: 0 auto 35px;
+    font-weight: normal;
+    font-size: 17px;
+    color: #347fb0;
+}
+
+.texto-sobre h1 {
+    margin-bottom: 0;
+}
+
+.img-imovel img {
+    height: 30vh;
+}
+
+.texto-sobre p {
+    text-align: justify;
+    padding: 20px;
+    width: 80vw;
+}
+
+.texto-sobre p span {
+    color: #347fb0;
+    font-weight: bold;
+}
+
+/*Serviços*/
+
+.conteudo-servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-fundo2);
+    color: white;
+}
+
+.conteudo-servicos .texto {
+    text-align: center;
+}
+
+.conteudo-servicos .texto h2 {
+    padding: 10px 0;
+    font-weight: bolder;
+}
+
+.conteudo-servicos p {
+    padding: 0 7rem;
+    width: 50vw;
+    line-height: 30px;
+}
+
+.conteudo-servicos p span {
+    color: yellow;
+    font-weight: bold;
+}
+
+.conteudo-servicos ul {
+    line-height: 28px;
+    padding-bottom: 1.5rem;
+}
+
+/*Corretores*/
+
+.conteudo-corretores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-corretores img {
+    height: 30vh;
+}
+
+.conteudo-corretores h2 {
+    color: #347fb0;
+    margin-top: 3rem;
+}
+
+.conteudo-corretores p {
+    text-align: justify;
+    padding: 5px 20px 20px 20px;
+    width: 80vw;
+    margin-top: 0;
+}
+
+.conteudo-corretores p span {
+    color: #347fb0;
+    font-weight: bold;
+}
+
+/*Rodapé-Contato*/
+
+.conteudo-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-fundo2);
+    color: white;
+}
+
+.conteudo-footer h2 {
+    margin-top: 3rem;
+}
+
+.localizacao iframe {
+    width: 55vw;
+    height: 45vh;
+}
+
+.conteudo-footer p {
+    text-align: justify;
+    background-color: black;
+    padding: 10px;
+}
+
+.conteudo-footer p span {
+    color: yellow;
+    font-weight: bold;
+}
+
+.conteudo-footer ul {
+    list-style-type: none;
+}
+
+.conteudo-footer li {
+    margin: 5px 0px;
+    padding: 5px 0px;
+}
+
+.conteudo-footer button {
+    border-radius: 10px;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    text-decoration: underline;
+    color: #347fb0;
 }
